@@ -28,8 +28,7 @@ Este é um projeto **Open Source**. Buscamos parceiros tecnológicos (Google, in
 
 **contatoestudantilFatec:**  moacyr.araujo@fatec.sp.gov.br 
 
-**LinkedIn:**  https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/](https://www.linkedin.com/pulse/o-brasil-precisa-de-m%C3%A3os-e-mentes-habilitadas-convite-moacyr-araujo-v9vqf/?trackingId=gUBpALmeTxCqackX7jSG7Q%3D%3D
-
+**LinkedIn:** https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/ 
 
 **Blogger:**    https://www.mecagenial.com.br/
 
