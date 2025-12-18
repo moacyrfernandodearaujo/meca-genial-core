@@ -22,4 +22,7 @@ Este é um projeto **Open Source**. Buscamos parceiros tecnológicos (Google, in
 
 ---
 **Contato:** [ moacyrfernandodearaujo@gmail.com ] 
+
+**contatoestudantil** [ moacyr.araujo@fatec.sp.gov.br ]
+
 **LinkedIn:** [ https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/ ]
