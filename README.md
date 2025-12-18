@@ -33,3 +33,13 @@ Este é um projeto **Open Source**. Buscamos parceiros tecnológicos (Google, in
 **Blogger:**    https://www.mecagenial.com.br/
 
 
+
+
+⚖️ Licença e Governança (Open Source)
+Este projeto está licenciado sob a Apache License 2.0. Escolhemos este modelo por ser o padrão ouro na indústria tecnológica global (utilizado em projetos como Android e Kubernetes).
+Por que Apache 2.0?
+Segurança de Patentes: Oferece garantias explícitas sobre direitos de propriedade intelectual, protegendo colaboradores e parceiros multinacionais.
+Foco Corporativo: Facilita a integração do Meca Genial com infraestruturas de grandes empresas e Big Techs.
+Liberdade com Responsabilidade: Permite o uso comercial e modificações, mantendo a integridade e os créditos dos autores originais.
+
+
