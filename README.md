@@ -43,3 +43,30 @@ Foco Corporativo: Facilita a integração do Meca Genial com infraestruturas de 
 Liberdade com Responsabilidade: Permite o uso comercial e modificações, mantendo a integridade e os créditos dos autores originais.
 
 
+# 🏭 Meca Genial - Core System
+
+**A inteligência por trás da primeira Cidade-Escola da Indústria Brasileira.**
+
+Este repositório contém o sistema central de gestão da Cidade Laboratório Meca Genial. O software foi projetado para integrar a vida acadêmica, a produção industrial e a sustentabilidade em um único ecossistema.
+
+## 🚀 Funcionalidades Principais
+- **Gestão de Alunos Residentes:** Controle de alojamento e alimentação.
+- **Passaporte do Mestre de Ofício:** Validação de competências práticas (mão na massa).
+- **Monitoramento Industrial:** Integração com sensores da fábrica escola.
+- **Sustentabilidade:** Gestão de energia solar e recursos hídricos.
+
+## 🛠️ Tecnologia
+- **Linguagem:** Java 17+
+- **Framework:** Spring Boot
+- **Banco de Dados:** PostgreSQL
+
+## 📞 Contato e Parcerias
+Para órgãos governamentais, investidores ou indústrias interessadas:
+- **Responsável:** Moacyr Fernando de Araújo
+- **WhatsApp:** +55 11 94918-7855
+- **Site:** [mecagenial.com](https://www.mecagenial.com)
+
+---
+*Utopia realizável em construção.*
+
+
