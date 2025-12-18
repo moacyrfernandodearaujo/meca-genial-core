@@ -1,15 +1,25 @@
-# Meca Genial 🚀
+# 🚀 Meca Genial Core
 
-## A Visão
-Uma rede de cidades-escola situadas em rodovias interestaduais, integrando Indústria 4.0, moradia digna e soberania digital através de CPDs físicos.
+> **"Construindo alicerces, costurando futuros."**
 
-## Alicerces do Projeto
-* **Educação em Movimento:** Estrutura para nômades e estudantes fixos.
-* **Fábrica-Escola:** Produção real gerando sustentabilidade para o aluno.
-* **Nós de Processamento:** Cada unidade é um servidor de dados soberano.
-
-## Quem sou eu
-Sou um observador de padrões, estudante de Mecânica na FATEC e filho de pedreiro e costureira. Este projeto é a costura de uma nova realidade.
+Este repositório é o núcleo de desenvolvimento da **Meca Genial**, um sistema operacional para Cidades-Escola Industriais. Projeto idealizado por Moacyr Fernando de Araújo, estudante de Mecânica (FATEC Itaquera).
 
 ---
-"O relógio não para. Estamos construindo agora."
+
+## 🏛️ A Visão do Projeto
+A Meca Genial propõe uma revolução educacional e industrial através de:
+* **Educação nas Rodovias:** Campi estratégicos em rodovias interestaduais.
+* **Soberania Digital:** Centros de Processamento de Dados (CPDs) físicos e proprietários em cada unidade.
+* **Dignidade Humana:** Moradia (incluindo suporte a motorhomes), alimentação e estágio remunerado em fábricas internas.
+
+## 🛠️ Estrutura do Repositório (Em Construção)
+- `/infraestrutura`: Plantas e conceitos arquitetônicos dos campi.
+- `/tecnologia`: Especificações dos CPDs e sistemas de IA.
+- `/comunicacao`: Manifestos, cartas públicas e artigos de parceria.
+
+## 🤝 Como Contribuir
+Este é um projeto **Open Source**. Buscamos parceiros tecnológicos (Google, indústrias 4.0) e acadêmicos (FATECs, Universidades) para materializar esta visão.
+
+---
+**Contato:** [ moacyrfernandodearaujo@gmail.com ] 
+**LinkedIn:** [ https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/ ]
