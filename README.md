@@ -21,16 +21,16 @@ A Meca Genial propõe uma revolução educacional e industrial através de:
 Este é um projeto **Open Source**. Buscamos parceiros tecnológicos (Google, indústrias 4.0) e acadêmicos (FATECs, Universidades) para materializar esta visão.
 
 ---
-**site:**   [https://www.mecagenial.com/]
+**site:**   https://www.mecagenial.com/
 
 
-**Contato:** [ moacyrfernandodearaujo@gmail.com ] 
+**Contato:**  moacyrfernandodearaujo@gmail.com
 
-**contatoestudantilFatec:** [ moacyr.araujo@fatec.sp.gov.br ]
+**contatoestudantilFatec:**  moacyr.araujo@fatec.sp.gov.br 
 
-**LinkedIn:** [ https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/ ]
+**LinkedIn:**  https://www.linkedin.com/feed/update/urn:li:ugcPost:7407427153455202304/
 
 
-**Blogger:**    [https://www.mecagenial.com.br/]
+**Blogger:**    https://www.mecagenial.com.br/
 
 
