@@ -3,87 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MECA GENIAL | Cidade Universitária & Complexo Laboratorial</title>
+    <title>MECA GENIAL | COMANDO CENTRAL</title>
     <style>
-        :root { --tech-blue: #00d4ff; --hydrogen-green: #2ecc71; --dark-bg: #050505; }
-        body { background-color: var(--dark-bg); color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; }
-        
-        header { 
-            border-bottom: 4px solid var(--tech-blue); 
-            padding: 60px 20px; 
+        :root {
+            --glow-blue: #00f2ff;
+            --h2-green: #00ff9d;
+            --dark-core: #0d0f12;
+            --panel-border: #1e252b;
+        }
+
+        body {
+            background-color: var(--dark-core);
+            color: #c4cfdd;
+            font-family: 'Consolas', 'Monaco', monospace;
+            margin: 0;
+            overflow-x: hidden;
+            border-top: 4px solid var(--glow-blue);
+        }
+
+        /* Linhas de grade de fundo (estilo blueprint) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(#161a1f 1px, transparent 1px), linear-gradient(90deg, #161a1f 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: -1;
+        }
+
+        header {
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 1px solid var(--panel-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sys-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--glow-blue);
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+        }
+
+        .status-dot {
+            height: 10px; width: 10px;
+            background-color: var(--h2-green);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--h2-green);
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .panel {
+            background: rgba(20, 25, 31, 0.9);
+            border: 1px solid var(--panel-border);
+            padding: 25px;
+            position: relative;
+        }
+
+        .panel::before {
+            content: "ID: " attr(data-id);
+            position: absolute;
+            top: -10px; right: 10px;
+            background: var(--dark-core);
+            padding: 0 5px;
+            font-size: 0.7em;
+            color: #4a5568;
+        }
+
+        h2 {
+            color: var(--h2-green);
+            font-size: 1.1em;
+            border-bottom: 1px solid #2d3748;
+            padding-bottom: 10px;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .metric {
+            font-size: 2.5em;
+            color: #fff;
+            margin: 15px 0;
+        }
+
+        .unit-label { font-size: 0.4em; color: var(--glow-blue); }
+
+        .terminal {
+            background: #000;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #8892b0;
+            line-height: 1.5;
+        }
+
+        .highlight { color: var(--glow-blue); }
+
+        .btn-core {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: transparent;
+            border: 1px solid var(--glow-blue);
+            color: var(--glow-blue);
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000');
-            background-size: cover;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            margin-top: 20px;
         }
 
-        h1 { font-size: 3.5em; color: var(--tech-blue); margin: 0; letter-spacing: 3px; }
-        .subtitle { font-size: 1.2em; color: var(--hydrogen-green); font-weight: bold; text-transform: uppercase; }
-
-        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
-        
-        .unit-card { 
-            background: #111; border: 1px solid #222; border-radius: 15px; padding: 30px;
-            transition: 0.4s; position: relative; overflow: hidden;
+        .btn-core:hover {
+            background: rgba(0, 242, 255, 0.1);
+            box-shadow: inset 0 0 15px rgba(0, 242, 255, 0.2);
         }
 
-        .unit-card:hover { border-color: var(--tech-blue); transform: translateY(-10px); }
-
-        .unit-card h3 { color: var(--tech-blue); margin-top: 0; }
-        
-        .badge { 
-            background: var(--hydrogen-green); color: #000; padding: 5px 12px; 
-            border-radius: 20px; font-size: 0.8em; font-weight: bold;
+        @media (max-width: 768px) {
+            .container { grid-template-columns: 1fr; }
         }
-
-        .btn-portal {
-            display: inline-block; background: var(--tech-blue); color: #000; 
-            padding: 15px 40px; text-decoration: none; font-weight: bold; 
-            border-radius: 50px; margin-top: 40px; transition: 0.3s;
-        }
-
-        .btn-portal:hover { background: #fff; box-shadow: 0 0 30px var(--tech-blue); }
-
-        footer { text-align: center; padding: 40px; color: #555; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>MECA GENIAL</h1>
-        <p class="subtitle">Cidade Universitária & Complexo de Fábricas Laboratoriais</p>
-    </header>
+<header>
+    <div class="sys-title">MECA_GENIAL_CORE_v1.0</div>
+    <div>
+        <span class="status-dot"></span> HTTPS_ACTIVE: mecagenial.org
+    </div>
+</header>
 
-    <div class="container">
-        <div class="grid">
-            <div class="unit-card">
-                <h3>Unidade de Energia Limpa</h3>
-                <p>Pesquisa e produção de <strong>Hidrogênio</strong> e novas matrizes energéticas para a indústria sustentável.</p>
-                <span class="badge">Vanguarda Tecnológica</span>
-            </div>
-
-            <div class="unit-card">
-                <h3>Fábricas Laboratoriais</h3>
-                <p>Ambientes de manufatura avançada onde alunos das FATECs aplicam engenharia de alta complexidade em tempo real.</p>
-                <span class="badge">Educação 4.0</span>
-            </div>
-
-            <div class="unit-card">
-                <h3>Núcleo de Engenharia</h3>
-                <p>Desenvolvimento do sistema <strong>Meca Genial Core</strong> para gestão integrada de recursos e processos industriais.</p>
-                <span class="badge">Arquitetura de Software</span>
-            </div>
+<div class="container">
+    <div class="panel" data-id="LAB-01">
+        <h2>Unidade de Produção H2 (Hidrogênio)</h2>
+        <div class="metric">0.00 <span class="unit-label">nm³/h</span></div>
+        <div class="terminal">
+            > SISTEMA DE MONITORAMENTO AGUARDANDO TELEMETRIA...<br>
+            > STATUS: <span class="highlight">STANDBY</span><br>
+            > CONEXÃO COM FATEC: ESTABELECENDO...
         </div>
-
-        <center>
-            <a href="https://github.com/moacyrfernandodearaujo/meca-genial-core" class="btn-portal">ACESSAR REPOSITÓRIO CORE</a>
-        </center>
+        
+        <h2 style="margin-top: 30px;">Fábricas Laboratoriais</h2>
+        <p>Integração sistêmica entre hardware de alta precisão e gestão de recursos universitários.</p>
     </div>
 
-    <footer>
-        &copy; 2025 Meca Genial | Operação Continental | Domínio Oficial: mecagenial.org
-    </footer>
+    <div class="panel" data-id="SYS-LOG">
+        <h2>Infraestrutura</h2>
+        <p>• Cidade Universitária<br>
+           • Engenharia Reversa<br>
+           • Matriz Energética Limpa</p>
+        
+        <div class="terminal" style="font-size: 0.75em; margin-top: 20px;">
+            [INFO] Domínio Validado<br>
+            [INFO] SSL Ativo<br>
+            [INFO] Java Core Ready
+        </div>
+
+        <a href="https://github.com/moacyrfernandodearaujo/meca-genial-core" class="btn-core">Acessar Repositório</a>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.7em; color: #4a5568;">
+    &copy; 2025 MECA GENIAL ORGANIZATION | OPERAÇÃO MADRUGADA
+</footer>
 
 </body>
 </html>
